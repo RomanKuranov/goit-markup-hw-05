@@ -58,7 +58,7 @@
       <section class="hero-section">
         <div class="container">
           <h1 class="title">Эффективные решения для вашего бизнеса</h1>
-          <button class="button" type="button">Заказать услугу</button>
+          <button class="button" type="button" data-modal-open>Заказать услугу</button>
         </div>
       </section>
       <!--Особенности-->
@@ -119,12 +119,15 @@
           <ul class="list">
             <li class="worck-content">
               <img class="image" src="./images/box1.jpg" alt="Бэкенд разработка" width="370" />
+              <p class="text">Десктопные приложения</p>
             </li>
             <li class="worck-content">
               <img class="image" src="./images/box2.jpg" alt="Фронтенд разработка" width="370" />
+              <p class="text">Мобильные приложения</p>
             </li>
             <li class="worck-content">
               <img class="image" src="./images/box3.jpg" alt="Разработка дизайна" width="370" />
+              <p class="text">Дизайнерские решения</p>
             </li>
           </ul>
         </div>
@@ -400,5 +403,16 @@
         </div>
       </div>
     </footer>
+    <!-- Модальное окно -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" data-modal-close>
+          <svg class="modal-icon" width="18" height="18">
+            <use href="./images/icons.svg#close-icon"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./modal.js"></script>
   </body>
 </html>
